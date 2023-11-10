@@ -1,11 +1,11 @@
 const input = document.getElementById("convert");
 
-const mon = input.target.value.toLowerCase();
 const mn = "фцужэнгшүзйыбөахролячёсмит";
 const en = "qwertyuiopasdfghjklzxcvbnm";
 
 function go() {
     let result = "";
+    const mon = input.value.toLowerCase();
 
 mon.split("").forEach((letter, index) => {
     const letterIndex = mn.indexOf(letter);
